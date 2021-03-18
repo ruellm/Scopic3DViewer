@@ -7,6 +7,7 @@
 - Supports Ambient and Diffuse lighting as well as Diffuse (as object color) for material. No specular material.
 - Cube shapes (and other shapes in the future) are cloned on render to optimized rendering. We do not create vertices and GPU buffers during addition to scene.
 - Cubes/Shapes are created infront of the camera look vector * default distance (computed at approx distance = 10).
+- Cube/Shape Id format is "Cube#N" where N is the unique number that describes the number sequence it is generated.
 - Default light is attached to the camera position. Moving the camera moves the light.
 - shaders are loaded from file, therefore 'shaders' folder should be copied to the build directory during execution.
 - No scale and rotation support of objects. size of cube is 10x10 (laid out in -5 to 5 in vertices).
