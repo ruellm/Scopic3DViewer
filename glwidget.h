@@ -67,6 +67,13 @@ private:
     std::vector<CubeEntity>     m_cubeList;
     OnItemClicked               m_onItemClicked;
 
+    /**
+     *  Axis coordinates and grid are not part of the 'scene' as they are static,
+     *  only created once, does not have a 'scene' functionality and is not portable
+     *  to non editor application (such as a game engine). Scene Manager at this point
+     *  handles the functioning scene in the 3d world.
+     */
+
     SceneManager                m_sceneManager;
 
     Renderer                    m_axisRenderer;
