@@ -17,4 +17,12 @@ example, on windows QT generate the folder name *build-ScopicTestQTQL-Desktop_Qt
 
 ***build-ScopicTestQTQL-Desktop_Qt_6_0_1_MSVC2019_64bit-Debug/shaders***
 
+However, when running as stand-alone executable, the 'shaders' folder should be in the same level as the exe file.
+
 --Auto copy of the folders to build directory is in progress.--
+
+## Precompiled
+A precompiled binary is available here:
+(Please request for access)
+
+https://tinyurl.com/sefdzupb
