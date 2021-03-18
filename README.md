@@ -13,17 +13,6 @@
 - shaders are loaded from file, therefore 'shaders' folder should be copied to the build directory during execution.
 - No scale and rotation support of objects. size of cube is 10x10 (laid out in -5 to 5 in vertices).
 
-## Important notes
-shaders are loaded from file, therefore the 'shaders' folder should be copied to the build directory when running from QT Creator
-
-example, on windows QT generate the folder name *build-ScopicTestQTQL-Desktop_Qt_6_0_1_MSVC2019_64bit-Debug*, copy the 'shaders' folder inside the build directory as such
-
-***build-ScopicTestQTQL-Desktop_Qt_6_0_1_MSVC2019_64bit-Debug/shaders***
-
-However, when running as stand-alone executable, the 'shaders' folder should be in the same level as the exe file.
-
---Auto copy of the folders to build directory is in progress.--
-
 ## Precompiled
 A precompiled binary is available here:
 (Please request for access)
