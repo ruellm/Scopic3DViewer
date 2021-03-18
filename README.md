@@ -4,7 +4,7 @@
 - Tested in Windows 10 environment (QT 6.0.1 MSVC2019 64bit)
 - Supports toggle of grid view and coordinate axis
 - Camera navigation by dragging mouse : (pan, rotate, zoom). Rotate center rotate at a center of an imaginary target computed as: position + look vector * distance. Distance is precomputed.
-- Only supports Ambient and Diffuse lighting as well as Diffuse (as object color) for material.
+- Supports Ambient and Diffuse lighting as well as Diffuse (as object color) for material. No specular material.
 - Cube shapes (and other shapes in the future) are cloned on render to optimized rendering. We do not create vertices and GPU buffers during addition to scene.
 - Default light is attached to the camera position. Moving the camera moves the light.
 - shaders are loaded from file, therefore 'shaders' folder should be copied to the build directory during execution.
