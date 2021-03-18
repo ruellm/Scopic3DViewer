@@ -68,9 +68,6 @@ void ShapesRenderer::drawCubes(ShapesMap shapes)
     if(vao == nullptr)
         return;
 
-    // bind the buffer
-    vao->bind();
-
     draw(vao, shapes);
 }
 
@@ -82,6 +79,9 @@ void ShapesRenderer::SetLight(const Light& light)
 void ShapesRenderer::draw(QOpenGLVertexArrayObject* vao, ShapesMap shapes)
 {
     QOpenGLFunctions *glFuncs = QOpenGLContext::currentContext()->functions();
+
+    // bind the buffer
+    vao->bind();
 
     int lightPosId = m_shader->uniformLocation("light.position");
     int lightAmbientId= m_shader->uniformLocation("light.ambient");
