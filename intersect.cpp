@@ -43,9 +43,7 @@ bool MousePick(
     return  true;
 }
 
-
-// Watch Gamedev.net line geometry testing for explanation
-// We must decide to put this somehwere
+// Based on Gamedev.net line geometry testing
 // this is using SLAB testing
 
 bool RaySlabIntersect(float slabmin, float slabmax, float raystart, float rayend, float& tbenter, float& tbexit)

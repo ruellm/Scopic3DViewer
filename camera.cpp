@@ -67,32 +67,6 @@ void Camera::fly (float amount)
     m_position += (m_up * amount);
 }
 
-void Camera::pitch(float amount)
-{
-    glm::mat4 rotmatx = glm::mat4(1.0f);
-    amount = glm::radians(amount);
-    rotmatx = glm::rotate(rotmatx, amount, m_right);
-
-    glm::vec4 transformdLook = glm::normalize( rotmatx * glm::vec4(m_look,1.0f) );
-    glm::vec4 transformdUp = glm::normalize( rotmatx * glm::vec4(m_up,1.0f) );
-
-    m_look = glm::vec3(transformdLook.x, transformdLook.y, transformdLook.z);
-    m_up =  glm::vec3(transformdUp.x, m_up.y, transformdUp.z); // pitch should not rotate the Y coord
-}
-
-void Camera::yaw(float amount)
-{
-    amount = glm::radians(amount);
-    glm::mat4 rotmatx = glm::mat4(1.0f);
-    rotmatx = glm::rotate(rotmatx, amount, glm::vec3(0.0f, 1.0f, 0.0f));
-
-    glm::vec4 transformdLook = glm::normalize( rotmatx * glm::vec4(m_look,1.0f) );
-    glm::vec4 transformdRight = glm::normalize( rotmatx * glm::vec4(m_right,1.0f) );
-
-    m_look = glm::vec3(transformdLook.x, transformdLook.y, transformdLook.z);
-    m_right =  glm::vec3(transformdRight.x, transformdRight.z, transformdRight.z);
-}
-
 void Camera::rotatePosition(const glm::vec3& axis, float amount)
 {
     // prepare matrices for translation to axis origin

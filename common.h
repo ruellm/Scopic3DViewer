@@ -1,5 +1,4 @@
-#ifndef _COMMON_H_
-#define _COMMON_H_
+#pragma once
 
 #include <stdio.h>
 #include <vector>
@@ -25,5 +24,3 @@
 
 #define SAFE_DELETE( obj ) { if( obj ) { delete obj; obj = NULL; } }
 #define SAFE_DELETE_ARRAY( obj ) { if( obj ) { delete[] obj; obj = NULL; } }
-
-#endif

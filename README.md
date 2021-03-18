@@ -11,7 +11,7 @@
 - Remove/Delete of Shape is not supported in the GUI but already supported in the SceneManager class. Supporting this feature will be minimal change.
 - Default light is attached to the camera position. Moving the camera moves the light.
 - shaders are loaded from file, therefore 'shaders' folder should be copied to the build directory during execution.
-- No scale and rotation support of objects. size of cube is 10x10 (laid out in -5 to 5 in vertices).
+- No scale and rotation support of objects. Size of cube is 10x10 (laid out in -5 to 5 in vertices).
 
 ## Precompiled
 A precompiled binary is available here:

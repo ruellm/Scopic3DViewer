@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "common.h"
@@ -17,8 +16,6 @@ public:
 
     void walk( float amount);
     void strafe (float amount);
-    void pitch(float amount);
-    void yaw(float amount);
     void fly (float amount);
 
     void rotatePosition(const glm::vec3& axis, float amount);

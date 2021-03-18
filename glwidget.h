@@ -1,5 +1,4 @@
-#ifndef GLWIDGETS_H
-#define GLWIDGETS_H
+#pragma once
 
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions>
@@ -83,4 +82,3 @@ private:
 
 };
 
-#endif // GLWIDGETS_H
