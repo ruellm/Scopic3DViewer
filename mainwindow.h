@@ -28,6 +28,8 @@ private slots:
 
     void on_actionCube_triggered();
 
+    void keyPressEvent(QKeyEvent *event);
+
 private:
     Ui::MainWindow *ui;
 };

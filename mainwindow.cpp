@@ -66,3 +66,12 @@ void MainWindow::on_actionCube_triggered()
 {
     ui->widget->addCube();
 }
+
+
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_Delete)
+    {
+        // ... Perform delete rerouted to widget->scenemanager using selected scene id
+    }
+}
